@@ -110,7 +110,7 @@ elif page == "🛍️ ทดสอบโมเดล (Shopping)":
                 cat = st.selectbox("หมวดหมู่สินค้า", enc1['Product_Category'].classes_)
             with c2:
                 price = st.number_input("ราคาสินค้า (บาท)", 99, 5000, 990)
-                aes = st.slider("Aesthetic Score (ความสวยงามคอนเทนต์)", 1, 10, 8)
+                aes = st.slider("Content Score", 1, 10, 8)
                 social = st.number_input("ยอดคอมเมนต์รีวิว", 0, 5000, 500)
                 time = st.slider("Watch Time (วินาที)", 1, 180, 45)
                 disc = st.radio("มีส่วนลด/คูปองหรือไม่?", ["Yes", "No"], horizontal=True)
